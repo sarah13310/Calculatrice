@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="icones">
+    <file>icones/standard/white/supprimer(1).png</file>
+    <file>icones/bureautique/white/backspace-icon-7.png</file>
+  </qresource>
+</RCC>
