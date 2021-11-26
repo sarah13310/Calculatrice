@@ -36,7 +36,6 @@ class Calculatrice(QMainWindow):
 
         self.ui.label_text.setText("0")
         self.ui.lcdNumber.setText("")
-
         self.buttons = self.findChildren(QPushButton)
 
         for button in self.buttons:
@@ -44,9 +43,8 @@ class Calculatrice(QMainWindow):
 
         self.operator = False
         self.validator = False
-
-        self.ui.pushButton.disconnect()
-        self.ui.pushButton.clicked.connect(self.closewindows)
+        self.ui.pushClose.disconnect()
+        self.ui.pushClose.clicked.connect(self.closewindows)
         self.ui.dial.valueChanged.connect(self.value_precision)
         self.ui.dial.setValue(self.precision)
 

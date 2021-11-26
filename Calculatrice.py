@@ -11,11 +11,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-
 class Ui_Calculatrice(object):
     def setupUi(self, Calculatrice):
         Calculatrice.setObjectName("Calculatrice")
-        Calculatrice.resize(757, 703)
+        Calculatrice.resize(621, 606)
         self.centralwidget = QtWidgets.QWidget(Calculatrice)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -23,21 +22,52 @@ class Ui_Calculatrice(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setAutoFillBackground(True)
         self.frame.setStyleSheet("border-radius:12px;\n"
 "background-color:qlineargradient(spread:pad, x1:0.493, y1:0, x2:0.492925, y2:0.972, stop:0 rgba(24, 37, 54, 255), stop:1 rgba(81, 88, 100, 255));")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.frame.setLineWidth(1)
         self.frame.setObjectName("frame")
-        self.pushButton_1 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_1.setGeometry(QtCore.QRect(30, 485, 91, 71))
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(485, 550, 98, 20))
         font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_1.setFont(font)
-        self.pushButton_1.setStyleSheet("QPushButton{\n"
+        font.setFamily("Segoe UI")
+        font.setPointSize(9)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("color:white;\n"
+"background-color: none;")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.pushClose = QtWidgets.QPushButton(self.frame)
+        self.pushClose.setGeometry(QtCore.QRect(15, 5, 36, 34))
+        self.pushClose.setStyleSheet("background-color: transparent;")
+        self.pushClose.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/icones/icones/standard/white/supprimer(1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushClose.setIcon(icon)
+        self.pushClose.setIconSize(QtCore.QSize(27, 34))
+        self.pushClose.setFlat(False)
+        self.pushClose.setObjectName("pushClose")
+        self.label_text = QtWidgets.QLabel(self.frame)
+        self.label_text.setGeometry(QtCore.QRect(21, 45, 561, 50))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_text.sizePolicy().hasHeightForWidth())
+        self.label_text.setSizePolicy(sizePolicy)
+        self.label_text.setMinimumSize(QtCore.QSize(0, 50))
+        self.label_text.setMaximumSize(QtCore.QSize(16777215, 52))
+        font = QtGui.QFont()
+        font.setFamily("Digital-7")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_text.setFont(font)
+        self.label_text.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(170, 0, 255, 255), stop:0.00497512 rgba(197, 197, 147, 255), stop:1 rgba(163, 200, 165, 255));\n"
 "\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"border-radius:4px;\n"
 "\n"
 "border-style:\n"
 "    solid;\n"
@@ -45,93 +75,93 @@ class Ui_Calculatrice(object):
 "    1px;\n"
 "border-color: \n"
 "Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:White;\n"
-"}")
-        self.pushButton_1.setObjectName("pushButton_1")
-        self.pushButton_2 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_2.setGeometry(QtCore.QRect(140, 485, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_2.setFont(font)
-        self.pushButton_2.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:White;\n"
-"}")
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_3.setGeometry(QtCore.QRect(250, 485, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_3.setFont(font)
-        self.pushButton_3.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:White;\n"
-"}")
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_6 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_6.setGeometry(QtCore.QRect(250, 395, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_6.setFont(font)
-        self.pushButton_6.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:White;\n"
-"}\n"
 "")
-        self.pushButton_6.setObjectName("pushButton_6")
-        self.pushButton_5 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_5.setGeometry(QtCore.QRect(140, 395, 91, 71))
+        self.label_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_text.setObjectName("label_text")
+        self.lcdNumber = QtWidgets.QLabel(self.frame)
+        self.lcdNumber.setGeometry(QtCore.QRect(21, 100, 561, 107))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lcdNumber.sizePolicy().hasHeightForWidth())
+        self.lcdNumber.setSizePolicy(sizePolicy)
+        self.lcdNumber.setMaximumSize(QtCore.QSize(16777215, 109))
+        font = QtGui.QFont()
+        font.setFamily("Digital-7")
+        font.setPointSize(55)
+        self.lcdNumber.setFont(font)
+        self.lcdNumber.setAutoFillBackground(False)
+        self.lcdNumber.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(170, 0, 255, 255), stop:0.00497512 rgba(197, 197, 147, 255), stop:1 rgba(163, 200, 165, 255));\n"
+"border-radius:6px;\n"
+"border-color:black;\n"
+"border-width:1px;\n"
+"border-style:solid;")
+        self.lcdNumber.setScaledContents(True)
+        self.lcdNumber.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lcdNumber.setIndent(0)
+        self.lcdNumber.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
+        self.lcdNumber.setObjectName("lcdNumber")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setEnabled(True)
+        self.label_2.setGeometry(QtCore.QRect(25, 190, 541, 16))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background-color: transparent;")
+        self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_2.setObjectName("label_2")
+        self.dial = QtWidgets.QDial(self.frame)
+        self.dial.setGeometry(QtCore.QRect(15, 215, 46, 41))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.dial.sizePolicy().hasHeightForWidth())
+        self.dial.setSizePolicy(sizePolicy)
+        self.dial.setMaximumSize(QtCore.QSize(53, 50))
+        self.dial.setMinimum(2)
+        self.dial.setMaximum(15)
+        self.dial.setProperty("value", 2)
+        self.dial.setOrientation(QtCore.Qt.Horizontal)
+        self.dial.setInvertedAppearance(False)
+        self.dial.setInvertedControls(False)
+        self.dial.setWrapping(False)
+        self.dial.setNotchTarget(-5.0)
+        self.dial.setNotchesVisible(True)
+        self.dial.setObjectName("dial")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(70, 210, 559, 50))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(9)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:transparent;\n"
+"color:rgb(107, 125, 198);")
+        self.label.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.label.setLineWidth(0)
+        self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label.setObjectName("label")
+        self.widget = QtWidgets.QWidget(self.frame)
+        self.widget.setGeometry(QtCore.QRect(20, 260, 561, 286))
+        self.widget.setObjectName("widget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(34)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setSpacing(16)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButton_7 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_7.sizePolicy().hasHeightForWidth())
+        self.pushButton_7.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_5.setFont(font)
-        self.pushButton_5.setStyleSheet("QPushButton{\n"
+        self.pushButton_7.setFont(font)
+        self.pushButton_7.setAutoFillBackground(False)
+        self.pushButton_7.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
 "\n"
@@ -142,15 +172,19 @@ class Ui_Calculatrice(object):
 "border-color: \n"
 "Black;\n"
 "\n"
-"\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
 "color:White;\n"
 "}")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_4 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_4.setGeometry(QtCore.QRect(30, 395, 91, 71))
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.gridLayout.addWidget(self.pushButton_7, 0, 0, 1, 1)
+        self.pushButton_4 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_4.sizePolicy().hasHeightForWidth())
+        self.pushButton_4.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
@@ -173,8 +207,44 @@ class Ui_Calculatrice(object):
 "color:White;\n"
 "}")
         self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_9 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_9.setGeometry(QtCore.QRect(250, 305, 91, 71))
+        self.gridLayout.addWidget(self.pushButton_4, 1, 0, 1, 1)
+        self.pushButton_8 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_8.sizePolicy().hasHeightForWidth())
+        self.pushButton_8.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_8.setFont(font)
+        self.pushButton_8.setAutoFillBackground(False)
+        self.pushButton_8.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"border-color: rgb(255, 255, 255);\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:White;\n"
+"}")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.gridLayout.addWidget(self.pushButton_8, 0, 1, 1, 1)
+        self.pushButton_9 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
+        self.pushButton_9.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
@@ -196,16 +266,20 @@ class Ui_Calculatrice(object):
 "color:White;\n"
 "}")
         self.pushButton_9.setObjectName("pushButton_9")
-        self.pushButton_8 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_8.setGeometry(QtCore.QRect(140, 305, 91, 71))
+        self.gridLayout.addWidget(self.pushButton_9, 0, 2, 1, 1)
+        self.pushButton_1 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_1.sizePolicy().hasHeightForWidth())
+        self.pushButton_1.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_8.setFont(font)
-        self.pushButton_8.setStyleSheet("QPushButton{\n"
+        self.pushButton_1.setFont(font)
+        self.pushButton_1.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"border-color: rgb(255, 255, 255);\n"
 "\n"
 "border-style:\n"
 "    solid;\n"
@@ -220,14 +294,78 @@ class Ui_Calculatrice(object):
 "QPushButton:hover{\n"
 "color:White;\n"
 "}")
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.pushButton_7 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_7.setGeometry(QtCore.QRect(30, 305, 91, 71))
+        self.pushButton_1.setObjectName("pushButton_1")
+        self.gridLayout.addWidget(self.pushButton_1, 2, 0, 1, 1)
+        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
+        self.pushButton_2.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_7.setFont(font)
-        self.pushButton_7.setStyleSheet("QPushButton{\n"
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:White;\n"
+"}")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.gridLayout.addWidget(self.pushButton_2, 2, 1, 1, 1)
+        self.pushButton_5 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
+        self.pushButton_5.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_5.setFont(font)
+        self.pushButton_5.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:White;\n"
+"}")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout.addWidget(self.pushButton_5, 1, 1, 1, 1)
+        self.pushButton_6 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_6.sizePolicy().hasHeightForWidth())
+        self.pushButton_6.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_6.setFont(font)
+        self.pushButton_6.setAutoFillBackground(False)
+        self.pushButton_6.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
 "\n"
@@ -242,50 +380,16 @@ class Ui_Calculatrice(object):
 "\n"
 "QPushButton:hover{\n"
 "color:White;\n"
-"}")
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.pushButton_C = QtWidgets.QPushButton(self.frame)
-        self.pushButton_C.setGeometry(QtCore.QRect(500, 305, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_C.setFont(font)
-        self.pushButton_C.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
-"color:White;\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
+"}\n"
 "")
-        self.pushButton_C.setObjectName("pushButton_C")
-        self.pushButton_egal = QtWidgets.QPushButton(self.frame)
-        self.pushButton_egal.setGeometry(QtCore.QRect(610, 575, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_egal.setFont(font)
-        self.pushButton_egal.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.95, fx:0.5, fy:0.5, stop:0 rgba(113, 255, 227, 255), stop:1 rgba(0, 221, 129, 255));\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:rgb(255, 0, 0);\n"
-"}")
-        self.pushButton_egal.setObjectName("pushButton_egal")
-        self.pushButton_0 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_0.setGeometry(QtCore.QRect(30, 575, 91, 71))
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.gridLayout.addWidget(self.pushButton_6, 1, 2, 1, 1)
+        self.pushButton_0 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_0.sizePolicy().hasHeightForWidth())
+        self.pushButton_0.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
@@ -308,13 +412,184 @@ class Ui_Calculatrice(object):
 "color:White;\n"
 "}")
         self.pushButton_0.setObjectName("pushButton_0")
-        self.pushButton_plus = QtWidgets.QPushButton(self.frame)
-        self.pushButton_plus.setGeometry(QtCore.QRect(375, 575, 91, 71))
+        self.gridLayout.addWidget(self.pushButton_0, 3, 0, 1, 1)
+        self.pushButton_point = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_point.sizePolicy().hasHeightForWidth())
+        self.pushButton_point.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_plus.setFont(font)
-        self.pushButton_plus.setStyleSheet("QPushButton{\n"
+        self.pushButton_point.setFont(font)
+        self.pushButton_point.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:White;\n"
+"}")
+        self.pushButton_point.setObjectName("pushButton_point")
+        self.gridLayout.addWidget(self.pushButton_point, 3, 1, 1, 1)
+        self.pushButton_plusmoins = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_plusmoins.sizePolicy().hasHeightForWidth())
+        self.pushButton_plusmoins.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_plusmoins.setFont(font)
+        self.pushButton_plusmoins.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
+"color:White;\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"")
+        self.pushButton_plusmoins.setObjectName("pushButton_plusmoins")
+        self.gridLayout.addWidget(self.pushButton_plusmoins, 3, 2, 1, 1)
+        self.pushButton_3 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
+        self.pushButton_3.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:White;\n"
+"}")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.gridLayout.addWidget(self.pushButton_3, 2, 2, 1, 1)
+        self.horizontalLayout.addLayout(self.gridLayout)
+        self.gridLayout_2 = QtWidgets.QGridLayout()
+        self.gridLayout_2.setSpacing(16)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.pushButton_div = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_div.sizePolicy().hasHeightForWidth())
+        self.pushButton_div.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_div.setFont(font)
+        self.pushButton_div.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_div.setObjectName("pushButton_div")
+        self.gridLayout_2.addWidget(self.pushButton_div, 0, 0, 1, 1)
+        self.pushButton_C = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_C.sizePolicy().hasHeightForWidth())
+        self.pushButton_C.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_C.setFont(font)
+        self.pushButton_C.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
+"color:White;\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"")
+        self.pushButton_C.setObjectName("pushButton_C")
+        self.gridLayout_2.addWidget(self.pushButton_C, 0, 1, 1, 1)
+        self.pushButton_back = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_back.sizePolicy().hasHeightForWidth())
+        self.pushButton_back.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_back.setFont(font)
+        self.pushButton_back.setAutoFillBackground(False)
+        self.pushButton_back.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(203, 0, 0, 255), stop:1 rgba(167, 0, 0, 255));\n"
+"color:transparent;\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.pushButton_back.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/icones/icones/bureautique/white/backspace-icon-7.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_back.setIcon(icon1)
+        self.pushButton_back.setIconSize(QtCore.QSize(50, 50))
+        self.pushButton_back.setCheckable(False)
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.gridLayout_2.addWidget(self.pushButton_back, 0, 2, 1, 1)
+        self.pushButton_mult = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_mult.sizePolicy().hasHeightForWidth())
+        self.pushButton_mult.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_mult.setFont(font)
+        self.pushButton_mult.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
 "\n"
@@ -331,9 +606,72 @@ class Ui_Calculatrice(object):
 "QPushButton:hover{\n"
 "color:rgb(85, 170, 255);\n"
 "}")
-        self.pushButton_plus.setObjectName("pushButton_plus")
-        self.pushButton_moins = QtWidgets.QPushButton(self.frame)
-        self.pushButton_moins.setGeometry(QtCore.QRect(375, 485, 91, 71))
+        self.pushButton_mult.setObjectName("pushButton_mult")
+        self.gridLayout_2.addWidget(self.pushButton_mult, 1, 0, 1, 1)
+        self.pushButton_pourcent = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_pourcent.sizePolicy().hasHeightForWidth())
+        self.pushButton_pourcent.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_pourcent.setFont(font)
+        self.pushButton_pourcent.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_pourcent.setObjectName("pushButton_pourcent")
+        self.gridLayout_2.addWidget(self.pushButton_pourcent, 1, 1, 1, 1)
+        self.pushButton_inverse = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_inverse.sizePolicy().hasHeightForWidth())
+        self.pushButton_inverse.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Roboto Medium")
+        font.setPointSize(18)
+        self.pushButton_inverse.setFont(font)
+        self.pushButton_inverse.setStyleSheet("QPushButton{\n"
+"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
+"\n"
+"border-style:\n"
+"    solid;\n"
+"border-width:\n"
+"    1px;\n"
+"border-color: \n"
+"Black;\n"
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:rgb(85, 170, 255);\n"
+"}")
+        self.pushButton_inverse.setObjectName("pushButton_inverse")
+        self.gridLayout_2.addWidget(self.pushButton_inverse, 1, 2, 1, 1)
+        self.pushButton_moins = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_moins.sizePolicy().hasHeightForWidth())
+        self.pushButton_moins.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(22)
@@ -358,13 +696,18 @@ class Ui_Calculatrice(object):
 "color:rgb(85, 170, 255);\n"
 "}")
         self.pushButton_moins.setObjectName("pushButton_moins")
-        self.pushButton_mult = QtWidgets.QPushButton(self.frame)
-        self.pushButton_mult.setGeometry(QtCore.QRect(375, 395, 91, 71))
+        self.gridLayout_2.addWidget(self.pushButton_moins, 2, 0, 1, 1)
+        self.pushButton_puissance2 = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_puissance2.sizePolicy().hasHeightForWidth())
+        self.pushButton_puissance2.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_mult.setFont(font)
-        self.pushButton_mult.setStyleSheet("QPushButton{\n"
+        self.pushButton_puissance2.setFont(font)
+        self.pushButton_puissance2.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
 "\n"
@@ -376,37 +719,20 @@ class Ui_Calculatrice(object):
 "Black;\n"
 "\n"
 "\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:rgb(85, 170, 255);\n"
-"}")
-        self.pushButton_mult.setObjectName("pushButton_mult")
-        self.pushButton_div = QtWidgets.QPushButton(self.frame)
-        self.pushButton_div.setGeometry(QtCore.QRect(375, 305, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_div.setFont(font)
-        self.pushButton_div.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
 "\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
 "color:rgb(85, 170, 255);\n"
 "}")
-        self.pushButton_div.setObjectName("pushButton_div")
-        self.pushButton_racine = QtWidgets.QPushButton(self.frame)
-        self.pushButton_racine.setGeometry(QtCore.QRect(610, 485, 91, 71))
+        self.pushButton_puissance2.setObjectName("pushButton_puissance2")
+        self.gridLayout_2.addWidget(self.pushButton_puissance2, 2, 1, 1, 1)
+        self.pushButton_racine = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_racine.sizePolicy().hasHeightForWidth())
+        self.pushButton_racine.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(22)
@@ -431,38 +757,18 @@ class Ui_Calculatrice(object):
 "color:rgb(85, 170, 255);\n"
 "}")
         self.pushButton_racine.setObjectName("pushButton_racine")
-        self.pushButton_puissance2 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_puissance2.setGeometry(QtCore.QRect(500, 485, 91, 71))
+        self.gridLayout_2.addWidget(self.pushButton_racine, 2, 2, 1, 1)
+        self.pushButton_plus = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_plus.sizePolicy().hasHeightForWidth())
+        self.pushButton_plus.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
-        self.pushButton_puissance2.setFont(font)
-        self.pushButton_puissance2.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:rgb(85, 170, 255);\n"
-"}")
-        self.pushButton_puissance2.setObjectName("pushButton_puissance2")
-        self.pushButton_pourcent = QtWidgets.QPushButton(self.frame)
-        self.pushButton_pourcent.setGeometry(QtCore.QRect(500, 395, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_pourcent.setFont(font)
-        self.pushButton_pourcent.setStyleSheet("QPushButton{\n"
+        self.pushButton_plus.setFont(font)
+        self.pushButton_plus.setStyleSheet("QPushButton{\n"
 "\n"
 "background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
 "\n"
@@ -479,111 +785,14 @@ class Ui_Calculatrice(object):
 "QPushButton:hover{\n"
 "color:rgb(85, 170, 255);\n"
 "}")
-        self.pushButton_pourcent.setObjectName("pushButton_pourcent")
-        self.pushButton_inverse = QtWidgets.QPushButton(self.frame)
-        self.pushButton_inverse.setGeometry(QtCore.QRect(610, 395, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(18)
-        self.pushButton_inverse.setFont(font)
-        self.pushButton_inverse.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:rgb(85, 170, 255);\n"
-"}")
-        self.pushButton_inverse.setObjectName("pushButton_inverse")
-        self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(600, 655, 98, 20))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(9)
-        self.label_4.setFont(font)
-        self.label_4.setStyleSheet("color:white;\n"
-"background-color: none;")
-        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_4.setObjectName("label_4")
-        self.pushButton_point = QtWidgets.QPushButton(self.frame)
-        self.pushButton_point.setGeometry(QtCore.QRect(140, 575, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_point.setFont(font)
-        self.pushButton_point.setStyleSheet("QPushButton{\n"
-"\n"
-"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));\n"
-"\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"color:White;\n"
-"}")
-        self.pushButton_point.setObjectName("pushButton_point")
-        self.pushButton_back = QtWidgets.QPushButton(self.frame)
-        self.pushButton_back.setGeometry(QtCore.QRect(610, 305, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_back.setFont(font)
-        self.pushButton_back.setAutoFillBackground(False)
-        self.pushButton_back.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(203, 0, 0, 255), stop:1 rgba(167, 0, 0, 255));\n"
-"color:transparent;\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.pushButton_back.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icones/icones/bureautique/white/backspace-icon-7.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_back.setIcon(icon)
-        self.pushButton_back.setIconSize(QtCore.QSize(50, 50))
-        self.pushButton_back.setCheckable(False)
-        self.pushButton_back.setObjectName("pushButton_back")
-        self.pushButton_plusmoins = QtWidgets.QPushButton(self.frame)
-        self.pushButton_plusmoins.setGeometry(QtCore.QRect(250, 575, 91, 71))
-        font = QtGui.QFont()
-        font.setFamily("Roboto Medium")
-        font.setPointSize(20)
-        self.pushButton_plusmoins.setFont(font)
-        self.pushButton_plusmoins.setStyleSheet("background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
-"color:White;\n"
-"border-style:\n"
-"    solid;\n"
-"border-width:\n"
-"    1px;\n"
-"border-color: \n"
-"Black;\n"
-"\n"
-"")
-        self.pushButton_plusmoins.setObjectName("pushButton_plusmoins")
-        self.pushButton_pi = QtWidgets.QPushButton(self.frame)
-        self.pushButton_pi.setGeometry(QtCore.QRect(500, 575, 91, 71))
+        self.pushButton_plus.setObjectName("pushButton_plus")
+        self.gridLayout_2.addWidget(self.pushButton_plus, 3, 0, 1, 1)
+        self.pushButton_pi = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_pi.sizePolicy().hasHeightForWidth())
+        self.pushButton_pi.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Roboto Medium")
         font.setPointSize(20)
@@ -607,96 +816,43 @@ class Ui_Calculatrice(object):
 "color:rgb(85, 170, 255);\n"
 "}")
         self.pushButton_pi.setObjectName("pushButton_pi")
-        self.pushButton = QtWidgets.QPushButton(self.frame)
-        self.pushButton.setGeometry(QtCore.QRect(25, 10, 56, 46))
-        self.pushButton.setStyleSheet("background-color: transparent;")
-        self.pushButton.setText("")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/icones/icones/standard/white/supprimer(1).png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton.setIcon(icon1)
-        self.pushButton.setIconSize(QtCore.QSize(34, 34))
-        self.pushButton.setFlat(False)
-        self.pushButton.setObjectName("pushButton")
-        self.dial = QtWidgets.QDial(self.frame)
-        self.dial.setGeometry(QtCore.QRect(35, 222, 66, 71))
-        self.dial.setMinimum(2)
-        self.dial.setMaximum(15)
-        self.dial.setProperty("value", 2)
-        self.dial.setOrientation(QtCore.Qt.Horizontal)
-        self.dial.setInvertedAppearance(False)
-        self.dial.setInvertedControls(False)
-        self.dial.setWrapping(False)
-        self.dial.setNotchTarget(-5.0)
-        self.dial.setNotchesVisible(True)
-        self.dial.setObjectName("dial")
-        self.label_text = QtWidgets.QLabel(self.frame)
-        self.label_text.setGeometry(QtCore.QRect(35, 60, 671, 51))
+        self.gridLayout_2.addWidget(self.pushButton_pi, 3, 1, 1, 1)
+        self.pushButton_egal = QtWidgets.QPushButton(self.widget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_egal.sizePolicy().hasHeightForWidth())
+        self.pushButton_egal.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
-        font.setFamily("Digital-7")
-        font.setPointSize(17)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(50)
-        self.label_text.setFont(font)
-        self.label_text.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(170, 0, 255, 255), stop:0.00497512 rgba(197, 197, 147, 255), stop:1 rgba(163, 200, 165, 255));\n"
+        font.setFamily("Roboto Medium")
+        font.setPointSize(20)
+        self.pushButton_egal.setFont(font)
+        self.pushButton_egal.setStyleSheet("QPushButton{\n"
 "\n"
-"border-radius:4px;\n"
-"\n"
+"background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.95, fx:0.5, fy:0.5, stop:0 rgba(113, 255, 227, 255), stop:1 rgba(0, 221, 129, 255));\n"
 "border-style:\n"
 "    solid;\n"
 "border-width:\n"
 "    1px;\n"
 "border-color: \n"
 "Black;\n"
-"")
-        self.label_text.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_text.setObjectName("label_text")
-        self.label = QtWidgets.QLabel(self.frame)
-        self.label.setGeometry(QtCore.QRect(110, 240, 161, 36))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(9)
-        self.label.setFont(font)
-        self.label.setStyleSheet("background-color:transparent;\n"
-"color:rgb(107, 125, 198);")
-        self.label.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
-        self.label.setObjectName("label")
-        self.lcdNumberFrame = QtWidgets.QLabel(self.frame)
-        self.lcdNumberFrame.setGeometry(QtCore.QRect(35, 120, 671, 106))
-        font = QtGui.QFont()
-        font.setFamily("Digital-7")
-        font.setPointSize(55)
-        self.lcdNumberFrame.setFont(font)
-        self.lcdNumberFrame.setAutoFillBackground(False)
-        self.lcdNumberFrame.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(170, 0, 255, 255), stop:0.00497512 rgba(197, 197, 147, 255), stop:1 rgba(163, 200, 165, 255));\n"
-"border-radius:6px;\n"
-"border-color:black;\n"
-"border-width:1px;\n"
-"border-style:solid;")
-        self.lcdNumberFrame.setText("")
-        self.lcdNumberFrame.setScaledContents(True)
-        self.lcdNumberFrame.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.lcdNumberFrame.setIndent(0)
-        self.lcdNumberFrame.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
-        self.lcdNumberFrame.setObjectName("lcdNumberFrame")
-        self.label_2 = QtWidgets.QLabel(self.frame)
-        self.label_2.setEnabled(True)
-        self.label_2.setGeometry(QtCore.QRect(40, 207, 656, 16))
-        font = QtGui.QFont()
-        font.setPointSize(9)
-        self.label_2.setFont(font)
-        self.label_2.setStyleSheet("background-color: transparent;")
-        self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_2.setObjectName("label_2")
-        self.lcdNumber = QtWidgets.QLabel(self.frame)
-        self.lcdNumber.setGeometry(QtCore.QRect(35, 130, 666, 81))
-        font = QtGui.QFont()
-        font.setFamily("Digital-7")
-        font.setPointSize(48)
-        self.lcdNumber.setFont(font)
-        self.lcdNumber.setStyleSheet("background-color: transparent;")
-        self.lcdNumber.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.lcdNumber.setObjectName("lcdNumber")
+"\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"color:rgb(255, 0, 0);\n"
+"}")
+        self.pushButton_egal.setObjectName("pushButton_egal")
+        self.gridLayout_2.addWidget(self.pushButton_egal, 3, 2, 1, 1)
+        self.horizontalLayout.addLayout(self.gridLayout_2)
+        self.lcdNumber.raise_()
+        self.pushClose.raise_()
+        self.label_text.raise_()
+        self.dial.raise_()
+        self.label.raise_()
+        self.label_4.raise_()
+        self.label_2.raise_()
         self.verticalLayout.addWidget(self.frame)
         Calculatrice.setCentralWidget(self.centralwidget)
 
@@ -706,34 +862,34 @@ class Ui_Calculatrice(object):
     def retranslateUi(self, Calculatrice):
         _translate = QtCore.QCoreApplication.translate
         Calculatrice.setWindowTitle(_translate("Calculatrice", "Calculatrice"))
+        self.label_4.setText(_translate("Calculatrice", "<html><head/><body><p><span style=\" font-weight:600; color:#aaaaff;\">by </span><span style=\" color:#8484c6;\">Xenatronics</span></p></body></html>"))
+        self.label_text.setText(_translate("Calculatrice", "0"))
+        self.lcdNumber.setText(_translate("Calculatrice", "0"))
+        self.label_2.setText(_translate("Calculatrice", "Infos"))
+        self.label.setText(_translate("Calculatrice", "<b>précision:</b> 2 chiffres"))
+        self.pushButton_7.setText(_translate("Calculatrice", "7"))
+        self.pushButton_4.setText(_translate("Calculatrice", "4"))
+        self.pushButton_8.setText(_translate("Calculatrice", "8"))
+        self.pushButton_9.setText(_translate("Calculatrice", "9"))
         self.pushButton_1.setText(_translate("Calculatrice", "1"))
         self.pushButton_2.setText(_translate("Calculatrice", "2"))
-        self.pushButton_3.setText(_translate("Calculatrice", "3"))
-        self.pushButton_6.setText(_translate("Calculatrice", "6"))
         self.pushButton_5.setText(_translate("Calculatrice", "5"))
-        self.pushButton_4.setText(_translate("Calculatrice", "4"))
-        self.pushButton_9.setText(_translate("Calculatrice", "9"))
-        self.pushButton_8.setText(_translate("Calculatrice", "8"))
-        self.pushButton_7.setText(_translate("Calculatrice", "7"))
-        self.pushButton_C.setText(_translate("Calculatrice", "C"))
-        self.pushButton_egal.setText(_translate("Calculatrice", "="))
+        self.pushButton_6.setText(_translate("Calculatrice", "6"))
         self.pushButton_0.setText(_translate("Calculatrice", "0"))
-        self.pushButton_plus.setText(_translate("Calculatrice", "+"))
-        self.pushButton_moins.setText(_translate("Calculatrice", "-"))
-        self.pushButton_mult.setText(_translate("Calculatrice", "*"))
-        self.pushButton_div.setText(_translate("Calculatrice", "/"))
-        self.pushButton_racine.setText(_translate("Calculatrice", "√ x"))
-        self.pushButton_puissance2.setText(_translate("Calculatrice", "x²"))
-        self.pushButton_pourcent.setText(_translate("Calculatrice", "%"))
-        self.pushButton_inverse.setText(_translate("Calculatrice", "1/x"))
-        self.label_4.setText(_translate("Calculatrice", "<html><head/><body><p><span style=\" font-weight:600; color:#aaaaff;\">by </span><span style=\" color:#8484c6;\">Xenatronics</span></p></body></html>"))
         self.pushButton_point.setText(_translate("Calculatrice", ","))
         self.pushButton_plusmoins.setText(_translate("Calculatrice", "+/-"))
+        self.pushButton_3.setText(_translate("Calculatrice", "3"))
+        self.pushButton_div.setText(_translate("Calculatrice", "/"))
+        self.pushButton_C.setText(_translate("Calculatrice", "C"))
+        self.pushButton_mult.setText(_translate("Calculatrice", "*"))
+        self.pushButton_pourcent.setText(_translate("Calculatrice", "%"))
+        self.pushButton_inverse.setText(_translate("Calculatrice", "1/x"))
+        self.pushButton_moins.setText(_translate("Calculatrice", "-"))
+        self.pushButton_puissance2.setText(_translate("Calculatrice", "x²"))
+        self.pushButton_racine.setText(_translate("Calculatrice", "√ x"))
+        self.pushButton_plus.setText(_translate("Calculatrice", "+"))
         self.pushButton_pi.setText(_translate("Calculatrice", "π"))
-        self.label_text.setText(_translate("Calculatrice", "0"))
-        self.label.setText(_translate("Calculatrice", "<b>précision:</b> 2 chiffres"))
-        self.label_2.setText(_translate("Calculatrice", "Infos"))
-        self.lcdNumber.setText(_translate("Calculatrice", "0"))
+        self.pushButton_egal.setText(_translate("Calculatrice", "="))
 import calculatrice_rc
 
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>757</width>
-    <height>703</height>
+    <width>621</width>
+    <height>606</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,6 +32,9 @@
     </property>
     <item>
      <widget class="QFrame" name="frame">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
       <property name="styleSheet">
        <string notr="true">border-radius:12px;
 background-color:qlineargradient(spread:pad, x1:0.493, y1:0, x2:0.492925, y2:0.972, stop:0 rgba(24, 37, 54, 255), stop:1 rgba(81, 88, 100, 255));</string>
@@ -45,766 +48,11 @@ background-color:qlineargradient(spread:pad, x1:0.493, y1:0, x2:0.492925, y2:0.9
       <property name="lineWidth">
        <number>1</number>
       </property>
-      <widget class="QPushButton" name="pushButton_1">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>1</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>2</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>3</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_6">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-}
-
-QPushButton:hover{
-color:White;
-}
-</string>
-       </property>
-       <property name="text">
-        <string>6</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_5">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>5</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>4</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_9">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>9</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_8">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-border-color: rgb(255, 255, 255);
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>8</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_7">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>7</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_C">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));
-color:White;
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-</string>
-       </property>
-       <property name="text">
-        <string>C</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_egal">
-       <property name="geometry">
-        <rect>
-         <x>610</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.95, fx:0.5, fy:0.5, stop:0 rgba(113, 255, 227, 255), stop:1 rgba(0, 221, 129, 255));
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(255, 0, 0);
-}</string>
-       </property>
-       <property name="text">
-        <string>=</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_0">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_plus">
-       <property name="geometry">
-        <rect>
-         <x>375</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>+</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_moins">
-       <property name="geometry">
-        <rect>
-         <x>375</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>22</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>-</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_mult">
-       <property name="geometry">
-        <rect>
-         <x>375</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>*</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_div">
-       <property name="geometry">
-        <rect>
-         <x>375</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>/</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_racine">
-       <property name="geometry">
-        <rect>
-         <x>610</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>22</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>√ x</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_puissance2">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>485</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>x²</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_pourcent">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>%</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_inverse">
-       <property name="geometry">
-        <rect>
-         <x>610</x>
-         <y>395</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>18</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>1/x</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
-         <x>600</x>
-         <y>655</y>
+         <x>485</x>
+         <y>550</y>
          <width>98</width>
          <height>20</height>
         </rect>
@@ -826,171 +74,13 @@ background-color: none;</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_point">
+      <widget class="QPushButton" name="pushClose">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-}
-
-QPushButton:hover{
-color:White;
-}</string>
-       </property>
-       <property name="text">
-        <string>,</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_back">
-       <property name="geometry">
-        <rect>
-         <x>610</x>
-         <y>305</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(203, 0, 0, 255), stop:1 rgba(167, 0, 0, 255));
-color:transparent;
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-
-
-</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="icon">
-        <iconset resource="calculatrice.qrc">
-         <normaloff>:/icones/icones/bureautique/white/backspace-icon-7.png</normaloff>:/icones/icones/bureautique/white/backspace-icon-7.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>50</width>
-         <height>50</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_plusmoins">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));
-color:White;
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-</string>
-       </property>
-       <property name="text">
-        <string>+/-</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_pi">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>575</y>
-         <width>91</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Roboto Medium</family>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-
-background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
-
-border-style:
-	solid;
-border-width:
-	1px;
-border-color: 
-Black;
-
-
-
-}
-
-QPushButton:hover{
-color:rgb(85, 170, 255);
-}</string>
-       </property>
-       <property name="text">
-        <string>π</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>25</x>
-         <y>10</y>
-         <width>56</width>
-         <height>46</height>
+         <x>15</x>
+         <y>5</y>
+         <width>36</width>
+         <height>34</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1000,12 +90,12 @@ color:rgb(85, 170, 255);
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="calculatrice.qrc">
+        <iconset resource="../../../Qt Templates/calculatrice.qrc">
          <normaloff>:/icones/icones/standard/white/supprimer(1).png</normaloff>:/icones/icones/standard/white/supprimer(1).png</iconset>
        </property>
        <property name="iconSize">
         <size>
-         <width>34</width>
+         <width>27</width>
          <height>34</height>
         </size>
        </property>
@@ -1013,51 +103,32 @@ color:rgb(85, 170, 255);
         <bool>false</bool>
        </property>
       </widget>
-      <widget class="QDial" name="dial">
-       <property name="geometry">
-        <rect>
-         <x>35</x>
-         <y>222</y>
-         <width>66</width>
-         <height>71</height>
-        </rect>
-       </property>
-       <property name="minimum">
-        <number>2</number>
-       </property>
-       <property name="maximum">
-        <number>15</number>
-       </property>
-       <property name="value">
-        <number>2</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="invertedAppearance">
-        <bool>false</bool>
-       </property>
-       <property name="invertedControls">
-        <bool>false</bool>
-       </property>
-       <property name="wrapping">
-        <bool>false</bool>
-       </property>
-       <property name="notchTarget">
-        <double>-5.000000000000000</double>
-       </property>
-       <property name="notchesVisible">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_text">
        <property name="geometry">
         <rect>
-         <x>35</x>
-         <y>60</y>
-         <width>671</width>
-         <height>51</height>
+         <x>21</x>
+         <y>45</y>
+         <width>561</width>
+         <height>50</height>
         </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>52</height>
+        </size>
        </property>
        <property name="font">
         <font>
@@ -1091,40 +162,26 @@ Black;
         <number>6</number>
        </property>
       </widget>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="lcdNumber">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>240</y>
-         <width>161</width>
-         <height>36</height>
+         <x>21</x>
+         <y>100</y>
+         <width>561</width>
+         <height>107</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <family>Segoe UI</family>
-         <pointsize>9</pointsize>
-        </font>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:transparent;
-color:rgb(107, 125, 198);</string>
-       </property>
-       <property name="text">
-        <string>&lt;b&gt;précision:&lt;/b&gt; 2 chiffres</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lcdNumberFrame">
-       <property name="geometry">
-        <rect>
-         <x>35</x>
-         <y>120</y>
-         <width>671</width>
-         <height>106</height>
-        </rect>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>109</height>
+        </size>
        </property>
        <property name="font">
         <font>
@@ -1143,7 +200,7 @@ border-width:1px;
 border-style:solid;</string>
        </property>
        <property name="text">
-        <string/>
+        <string>0</string>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -1167,9 +224,9 @@ border-style:solid;</string>
        </property>
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>207</y>
-         <width>656</width>
+         <x>25</x>
+         <y>190</y>
+         <width>541</width>
          <height>16</height>
         </rect>
        </property>
@@ -1188,41 +245,1056 @@ border-style:solid;</string>
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
        </property>
       </widget>
-      <widget class="QLabel" name="lcdNumber">
+      <widget class="QDial" name="dial">
        <property name="geometry">
         <rect>
-         <x>35</x>
-         <y>130</y>
-         <width>666</width>
-         <height>81</height>
+         <x>15</x>
+         <y>215</y>
+         <width>46</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>53</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>2</number>
+       </property>
+       <property name="maximum">
+        <number>15</number>
+       </property>
+       <property name="value">
+        <number>2</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="invertedAppearance">
+        <bool>false</bool>
+       </property>
+       <property name="invertedControls">
+        <bool>false</bool>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="notchTarget">
+        <double>-5.000000000000000</double>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>210</y>
+         <width>559</width>
+         <height>50</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <family>Digital-7</family>
-         <pointsize>48</pointsize>
+         <family>Segoe UI</family>
+         <pointsize>9</pointsize>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: transparent;</string>
+        <string notr="true">background-color:transparent;
+color:rgb(107, 125, 198);</string>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
        </property>
        <property name="text">
-        <string>0</string>
+        <string>&lt;b&gt;précision:&lt;/b&gt; 2 chiffres</string>
        </property>
        <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-       <property name="margin">
-        <number>12</number>
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
        </property>
       </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>260</y>
+         <width>561</width>
+         <height>286</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>34</number>
+        </property>
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="spacing">
+           <number>16</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+border-color: rgb(255, 255, 255);
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButton_1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+}
+
+QPushButton:hover{
+color:White;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="pushButton_0">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="pushButton_point">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>,</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="pushButton_plusmoins">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));
+color:White;
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+</string>
+            </property>
+            <property name="text">
+             <string>+/-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:White;
+}</string>
+            </property>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="spacing">
+           <number>16</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_div">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>/</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_C">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 85, 0, 255), stop:1 rgba(255, 0, 0, 255));
+color:White;
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+</string>
+            </property>
+            <property name="text">
+             <string>C</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_back">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(203, 0, 0, 255), stop:1 rgba(167, 0, 0, 255));
+color:transparent;
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Qt Templates/calculatrice.qrc">
+              <normaloff>:/icones/icones/bureautique/white/backspace-icon-7.png</normaloff>:/icones/icones/bureautique/white/backspace-icon-7.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_mult">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>*</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_pourcent">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>%</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_inverse">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>1/x</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="pushButton_moins">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>22</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton_puissance2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>x²</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="pushButton_racine">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>22</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>√ x</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="pushButton_plus">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="pushButton_pi">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1, fx:0.5, fy:0.5, stop:0 rgba(202, 202, 202, 255), stop:1 rgba(93, 93, 93, 255));
+
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+
+}
+
+QPushButton:hover{
+color:rgb(85, 170, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>π</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="pushButton_egal">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Roboto Medium</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.95, fx:0.5, fy:0.5, stop:0 rgba(113, 255, 227, 255), stop:1 rgba(0, 221, 129, 255));
+border-style:
+	solid;
+border-width:
+	1px;
+border-color: 
+Black;
+
+
+}
+
+QPushButton:hover{
+color:rgb(255, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <zorder>lcdNumber</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>pushClose</zorder>
+      <zorder>label_text</zorder>
+      <zorder>horizontalSpacer_2</zorder>
+      <zorder>dial</zorder>
+      <zorder>label</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_2</zorder>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
  <resources>
-  <include location="calculatrice.qrc"/>
+  <include location="../../../Qt Templates/calculatrice.qrc"/>
  </resources>
  <connections/>
 </ui>
